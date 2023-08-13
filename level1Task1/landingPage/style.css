@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+}
+
+.header {
+    background-color: #263238;
+    color: #ffffff;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 1.5rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: #ffd600;
+}
+
+.hero {
+    margin-top: 2rem;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #cccccc;
+    margin-bottom: 1.5rem;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ffd600;
+    color: #263238;
+    padding: 0.8rem 1.5rem;
+    border-radius: 3px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #ffc000;
+}
+
+.menu-btn {
+    font-size: 1.8rem;
+    cursor: pointer;
+    display: none;
+    /* Initially hide on larger screens */
+}
+
+.services {
+    text-align: center;
+    padding: 4rem 4rem;
+    background-color: #e9e7e7;
+}
+
+.services h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.section-title {
+    position: relative;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.section-title::after {
+    content: "";
+    position: absolute;
+    bottom: -1rem;
+    /* Adjust the value as needed */
+    left: 46.5%;
+    transform: translateX(-50%);
+    width: 100px;
+    /* Adjust the width of the underline */
+    height: 4px;
+    /* Height of the underline */
+    background-color: blue;
+    /* Color of the underline */
+}
+
+.service-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+}
+
+.service {
+    width: calc(33.33% - 2rem);
+    padding: 1.5rem;
+    background-color: #fcfcfc;
+    /* Gray background color */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.service img {
+    max-width: 80%;
+    /* Adjusted picture size */
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.service h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.service p {
+    font-size: 1.1rem;
+    color: #afabab;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 5%;
+    background-color: #f8f8f8;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.about p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.team-image {
+    flex: 1;
+    max-width: 100%;
+}
+
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #263238;
+    color: #ffffff;
+}
+
+
+
+@media (max-width: 768px) {
+    @media (max-width: 768px) {
+        .navbar {
+            position: relative;
+            /* Ensure the menu button stays within the navbar */
+        }
+
+        .nav-links {
+            display: none;
+            /* Hide the regular nav links on mobile */
+            position: absolute;
+            top: 100%;
+            /* Position below the navbar */
+            left: 0;
+            background-color: #263238;
+            width: 100%;
+            text-align: center;
+            z-index: 1;
+            /* Ensure the menu is on top of the content */
+        }
+
+        .nav-links.active {
+            display: block;
+            /* Show the nav links when menu is active */
+        }
+
+        .menu-btn {
+            display: block;
+            /* Show the menu button on mobile */
+        }
+    }
+
+
+    @media (max-width: 768px) {
+        .service-row {
+            flex-direction: column;
+        }
+
+        .service {
+            width: 100%;
+            /* Display a single card per row */
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    .about {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-text {
+        margin-bottom: 2rem;
+    }
+
+    .team-image {
+        max-width: 80%;
+        margin-top: 2rem;
+    }
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>LANDING PAGE</title>
+</head>
+
+<body>
+    <!-- header section of page started -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="menu-btn" onclick="toggleMenu()">&#9776;</div>
+            <div class="logo">CodSoft</div>
+            <!-- nav links  -->
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>Welcome to CodSoft</h1>
+            <p>Your One-Stop Solution for Web Development</p>
+            <a href="#" class="btn">Get Started</a>
+        </div>
+    </header>
+    <!-- our services section started -->
+    <section class="services">
+        <h2 class="section-title">Our Services</h2>
+        <div class="service-row">
+            <div class="service">
+                <img src="https://img.freepik.com/premium-photo/website-design-software-provide-modish-template-online-retail-business_31965-42207.jpg"
+                    alt="Web Design">
+                <h3>Web Design</h3>
+                <p>We create stunning and responsive web designs that captivate your audience.</p>
+            </div>
+            <div class="service">
+                <img src="https://showmecourses.com/wp-content/uploads/2021/10/web-development.webp"
+                    alt="Web Development">
+                <h3>Web Development</h3>
+                <p>Our expert developers turn your ideas into functional and dynamic websites.</p>
+            </div>
+            <div class="service">
+                <img src="https://www.sana-commerce.com/wp-content/uploads/Selecting-best-e-commerce-provider-featured-image.jpg"
+                    alt="E-Commerce">
+                <h3>E-Commerce Solutions</h3>
+                <p>We specialize in building secure and scalable e-commerce platforms.</p>
+            </div>
+        </div>
+    </section>
+    <!-- about us section started -->
+    <section class="about">
+        <div class="about-text">
+            <h2>About Us</h2>
+            <p>We are a passionate team of developers dedicated to delivering top-notch web solutions. With years of
+                experience, we bring your vision to life.</p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+        <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1200,h=630,fit=crop,f=jpeg/Aq20eV79zLfpXV6b/1685789339697-YrDL60zzRBfzM6Wr.jpg"
+            alt="Team" class="team-image">
+    </section>
+
+    <!-- footer section  -->
+    <footer class="footer">
+        <p>&copy; 2023 SoftwareHouse. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+
+</body>
+
+</html>
