@@ -22,9 +22,10 @@ body {
     align-items: center;
     padding: 0 5%;
 }
-.brand{
+
+.brand {
     display: flex;
-    align-items:end;
+    align-items: end;
     justify-content: end;
     font-size: 2rem;
 }
@@ -147,7 +148,6 @@ body {
 
 .service img {
     max-width: 100%;
-    /* Adjusted picture size here */
     height: 68%;
     margin-bottom: 1rem;
     border-radius: 10px;
@@ -169,7 +169,7 @@ body {
     align-items: center;
     text-align: justify;
     padding: 2rem 5%;
-    background-color: white;
+    background-color: white
 }
 
 .about-text {
@@ -184,10 +184,28 @@ body {
 .about p {
     font-size: 1.1rem;
     margin-bottom: 2rem;
+    margin-right: 1rem;
 }
 
-.team-image {
+.button {
 
+    display: inline-block;
+    background-color: blue;
+    color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 15px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.button:hover {
+    background-color: blue;
+    transform: scale(1.05);
+}
+
+
+
+.team-image {
     width: 350px;
     height: 300px;
 }
@@ -254,10 +272,25 @@ body {
 
     .about-text {
         margin-bottom: 2rem;
+        text-align: justify;
+    }
+
+    .button {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        width: 150px;
+        background-color: blue;
+        color: white;
+        padding: 1rem 1.5rem;
+        border-radius: 15px;
+        text-decoration: none;
+        transition: background-color 0.3s ease-in-out;
     }
 
     .team-image {
         max-width: 80%;
         margin-top: 2rem;
     }
+
 }
