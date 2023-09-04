@@ -283,13 +283,13 @@ profile-photo .img {
 .education-content .row .timeline-item {
   position: relative;
   padding-left: 37px;
-  padding-bottom: 50px;
+  padding-bottom: 86px;
 }
 
 .education-content .row .internship .timeline-item {
   position: relative;
   padding-left: 37px;
-  padding-bottom: 30px;
+  padding-bottom: 15px;
 }
 
 .education-content .row .timeline-item:last-child {
