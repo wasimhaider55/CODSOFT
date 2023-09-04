@@ -32,8 +32,6 @@ body {
   margin: auto;
 }
 
-
-
 /*---------------------------Header---------------------------*/
 
 .header-area {
@@ -55,7 +53,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* padding-bottom: 2rem; */
 }
 
 .logo {
@@ -164,7 +161,6 @@ profile-photo .img {
   transform: rotate(360deg);
 }
 
-
 /*---------------------------About---------------------------*/
 
 .about-area {
@@ -272,7 +268,6 @@ profile-photo .img {
 }
 
 .education-content .row .timeline {
-  /* background-color:#e5e5e5; */
   padding: 30px 15px;
   border: 1px solid #e5e5e5;
   border-radius: 10px;
@@ -283,13 +278,13 @@ profile-photo .img {
 .education-content .row .timeline-item {
   position: relative;
   padding-left: 37px;
-  padding-bottom: 86px;
+  padding-bottom: 35px;
 }
 
 .education-content .row .internship .timeline-item {
   position: relative;
   padding-left: 37px;
-  padding-bottom: 15px;
+  padding-bottom: 40px;
 }
 
 .education-content .row .timeline-item:last-child {
@@ -338,7 +333,6 @@ profile-photo .img {
 /*---------------------------Projects---------------------------*/
 .project-content {
   padding: 90px 0;
-  /* color:#fff;  */
 }
 
 .project-title {
@@ -365,7 +359,6 @@ profile-photo .img {
 }
 
 .project {
-  /* padding: 30px 15px; */
   color: #e5e5e5;
   border: 2px solid #e5e5e5;
   border-radius: 10px;
@@ -401,8 +394,8 @@ profile-photo .img {
   border-color: #fed700;
 }
 
-
 /*---------------------------Contact Me---------------------------*/
+
 .contact-content {
   padding: 100px 0;
   color: #fff;
@@ -453,11 +446,8 @@ profile-photo .img {
   display: block;
 }
 
-
-
-
-
 /*---------------------------Footer---------------------------*/
+
 .footer {
   max-width: 950px;
   margin: 0 auto;
@@ -479,8 +469,6 @@ profile-photo .img {
 .copyright {
   font-size: 12px;
 }
-
-
 
 /*------------------- Responsive Design on small screen -------------------*/
 
